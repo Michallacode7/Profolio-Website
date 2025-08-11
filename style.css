@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 50%;
+  height: fit-content;
+}
+
+header {
+  font-family: "lobster", sans-serif;
+  position: inherit;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-color: #3fa9f5;
+  box-shadow: 0 10px 10px #c0e0f9;
+  text-decoration: none;
+}
+header a {
+  font-family: "lobster", sans-serif;
+}
+body {
+  background-color: #d1ddf7;
+  font-size: 55px;
+}
+body {
+  background-position: left;
+  background-position: top left;
+  background-repeat: space;
+}
+h1 {
+  font-family: "lobster", sans-serif;
+  text-align: center;
+  color: #000000;
+  padding: 7%;
+}
+h2 {
+  font-family: "baskerville", sans-serif;
+  padding: 2ex;
+  text-align: left;
+}
+p {
+  position: relative;
+  align-items: center;
+  padding: 50px;
+  text-decoration: none;
+}
+a {
+  font-family: "baskerville", sans-serif;
+  padding: 1%;
+  color: #000dff;
+}
+hr :hover {
+  color: #0800ff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #131313;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: center;
+}
+
+.menu a:hover {
+  color: #f7ff04;
+  text-align: center;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger {
+  display: block;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: contents;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #658bff;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(255, 212, 93, 0.8);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 10%;
+}
