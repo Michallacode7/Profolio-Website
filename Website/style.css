@@ -4,27 +4,27 @@
   box-sizing: border-box;
 }
 img {
-  width: 100%;
+  width: 50%;
   height: fit-content;
-  padding: 100px;
 }
 
 header {
-  font-family: "Lobster-Regular", sans-serif;
-  position: relative;
+  font-family: "lobster", sans-serif;
+  position: inherit;
   top: 0;
-  display: grid;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 60px;
-  background-color: #adff73;
+  background-color: #3fa9f5;
+  box-shadow: 0 10px 10px #c0e0f9;
   text-decoration: none;
 }
 header a {
-  font-family: "Lobster-Regular", sans-serif;
+  font-family: "lobster", sans-serif;
 }
 body {
-  background-color: #ffffff;
+  background-color: #d1ddf7;
   font-size: 55px;
 }
 body {
@@ -33,25 +33,29 @@ body {
   background-repeat: space;
 }
 h1 {
-  font-family: "Lobster-Regular", sans-serif;
+  font-family: "lobster", sans-serif;
   text-align: center;
-  color: #131313;
-  padding: 2%;
-  margin: 2%;
+  color: #000000;
+  padding: 7%;
 }
 h2 {
   font-family: "baskerville", sans-serif;
-  padding: 5px;
-  color: #131313;
+  padding: 2ex;
   text-align: left;
-  margin: 50px;
 }
 p {
-  font-family: "Lobster-Regular", sans-serif;
   position: relative;
-  padding: 100px;
+  align-items: center;
+  padding: 50px;
   text-decoration: none;
-  margin: 2%;
+}
+a {
+  font-family: "baskerville", sans-serif;
+  padding: 1%;
+  color: #000dff;
+}
+hr :hover {
+  color: #0800ff;
 }
 
 nav {
@@ -76,7 +80,7 @@ nav {
 
 .menu a {
   display: block;
-  padding: 50px;
+  padding: 10px;
   color: #131313;
   text-decoration: none;
   transition: color 0.3s;
@@ -84,12 +88,12 @@ nav {
 }
 
 .menu a:hover {
-  color: #21b820;
+  color: #f7ff04;
   text-align: center;
 }
 
 .burger {
-  width: 10px;
+  width: 30px;
   height: 20px;
   cursor: pointer;
 }
@@ -141,7 +145,5 @@ nav {
 
 footer {
   text-align: center;
-  padding: 2%;
-  background-color: #adff73;
-  position: static;
+  padding: 10%;
 }
